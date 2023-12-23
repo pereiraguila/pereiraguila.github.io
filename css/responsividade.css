@@ -1,0 +1,177 @@
+@media screen and (max-width:1000px){
+   body{
+   	padding: 0 50px 0 50px;
+   }
+}
+
+
+
+
+@media screen and (max-width: 850px){
+	
+ nav {
+	  width: 100%;
+	  height: 80px;
+	  padding: 0 7px;
+	  position: static;
+	  z-index: 10;
+    }  
+
+	nav .menuCelular{
+		display: block;
+	}
+
+	nav ul{
+	 background-color:#000080;
+	 position: fixed;
+	 top:80px;
+	 width: 100%;
+	 height:100vh;
+	 display: block;
+	 left:-100%;
+	 transition:0.5s;	
+	}
+
+	nav ul.abrir{
+		left: 0;
+	}
+
+
+  nav.manterFixo {
+  position: fixed;
+}
+
+
+	nav ul li{
+		text-align:left;
+		width: 100%;
+		margin-top: 45px;
+				
+	}
+
+	nav ul li a{
+		font-size: 22px;
+	}
+
+	nav ul li a:hover::after{
+ 	width: 0;
+ }
+
+   .activado{
+    background: none;
+    border:none;
+    color:#ffffff;
+
+  }
+
+    .activado:hover{
+	 background: none;
+  }
+
+  nav ul li a:hover{
+  	color: black;
+  }
+
+
+   body{
+   	padding: 0 20px 0 20px;
+   }
+
+
+  .avatarImg {
+  position: static;
+  margin: 0 auto; 
+  animation: none; 
+}
+
+   #section1, #section2, #section3,#contact,#section4{
+		margin-top: 0;
+		box-shadow: 0 0 0;
+	}
+
+
+#section1, #section2, #section3,#contact{
+		padding: 0px 15px 30px 15px;
+
+	}
+
+	.card{
+		width:100%; 
+	}
+
+
+	body{
+   	padding: 0 0 0 0;
+   }	
+
+}
+
+
+
+@media screen and (max-width:600px){
+	.card{
+		height: 330px; 
+	}	
+}
+
+
+
+@media screen and (max-width:430px){
+	.card{
+		height: 350px; 
+	}	
+}
+
+
+@media screen and (max-width:415px){
+	.card{
+		height: 380px; 
+	}	
+}
+
+
+@media screen and (max-width:400px){
+	.card{
+		height:400px; 
+	}	
+}
+
+
+@media screen and (max-width:340px){
+	.card{
+		height:420px; 
+	}	
+}
+
+
+
+
+
+@media screen and (max-width:321px){
+	.card{
+		height: 440px; 
+	}	
+}
+
+
+@media screen and (max-width:300px){
+	.card{
+		height: 460px; 
+	}	
+}
+
+
+@media screen and (max-width:285px){
+	.card{
+		height: 485px; 
+	}	
+
+   
+   #section1, #section2, #section3,#contact{
+		padding: 0px 3px 30px 3px;
+
+	}
+
+
+}
+

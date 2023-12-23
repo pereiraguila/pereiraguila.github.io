@@ -1,0 +1,122 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-image:linear-gradient(60grad,#1C1C1C,black,#000080,#9B4504);*/
+	background-image:linear-gradient(60grad,#1C1C1C,black,#000080,#008AFF);
+	
+	
+}
+
+.contentor{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	background-color:white;
+	box-shadow: 0 0 5px;
+	min-width: 295px;
+	
+}
+
+.topo{
+
+	width: 100%;
+	height: 35px;
+	background:#DCDCDC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+	
+}
+
+.miniCaixa{
+	padding: 10px;
+	width: 100%;
+
+}
+
+.pp1{
+	display: flex;
+	flex-direction: column;
+	padding: 1px;
+	position: relative;
+	margin-top:12px; 
+}
+
+.mmm{
+	position: absolute;
+	left: 90%;
+	top:47%;
+	
+}
+
+input{
+	outline: none;
+	border: none;
+	height: 30px;
+	border-radius: 5px;
+	background-color:#FFFFFF;
+	border: 2px solid #BEBEBE;
+	padding:5px;
+	font-size:13px; 
+	
+}
+
+input:focus{
+	  border: 2px solid #008AFF;
+}
+
+label{
+	font-size: 17px;
+	margin-bottom: 7px;
+}
+
+.aviso{
+	font-size: 12px;
+	color:#E00D10;
+	padding-left: 5px;
+	margin-top:2px;
+	display: none;
+	 
+}
+
+.enviar{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.submit{
+	width: 100%;
+	height: 32px;
+	cursor: pointer;
+	border: none;
+	/*background:#FF5700;*/
+	color: white;
+	font-size: 15px;
+	border-radius:5px;
+	background:#008AFF;
+
+
+}
+
+
+
+
+@media screen and (max-width: 300px){
+	.contentor{
+	
+	width: 98%;
+	
+}

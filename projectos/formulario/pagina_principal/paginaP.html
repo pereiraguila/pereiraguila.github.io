@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bem_vindo</title>
+	<style>
+	   body{
+	   	padding: 0;
+	   	margin: 0;
+	   	box-sizing: border-box;
+	   	height: 100vh;
+	   	display: flex;
+	
+	   	align-items: center;
+	   	flex-direction: column;
+	  
+	   }
+
+	   .caixa{
+	   	background:lightblue;
+	   	width: 100%; 
+	   	display: flex;
+	   	flex-direction: column;
+	   	align-items: center;
+	   	min-height:200px;
+	   	border-radius: 15px;
+	   	border: 3px solid #000000;
+	   	padding: 20px;
+	   }	
+
+	   p{
+	   	height: 150px;
+	   	padding: 30px;
+	   	background: lightblue;
+	   	display: flex;
+	   	justify-content:center;
+	   	align-items: center;
+	   	font-size: 20px;
+	   	color: #000000;
+	   }
+
+	   h1{
+	   	margin-top: 80px;
+	   }
+
+	   button{
+	   	background: #008AFF;
+	   	border: none;
+	   	color: #ffffff;
+	   	border-radius:5px;
+	   	height: 40px;
+	   	cursor: pointer;
+	   	padding: 10px 20px;
+	   	display:block;
+	   	margin-top: 5px;
+
+	   	
+	   }
+
+
+    </style>
+</head>
+<body>
+	<h1>Bem_vindo</h1>
+	<div class="caixa">
+	<p>Esta é uma página simples, criada por HTML, CSS e JavaScript!</p>
+	<button>Clique</button>
+	</div>
+
+<script>
+	var h1 = window.document.querySelector('h1');
+	var p = window.document.querySelector('p');
+	var button = window.document.querySelector('button');
+      
+	var palavras=["você clicou no botão!", "você é um ótimo programador!", "seja honrado!", "Não venceremos porque somos privilegiados, venceremos porque somos disciplinados!", " Enfrente seus medos antes que eles te enfrentem!", "Exercitem-se sempre, se você não poder ir ao ginásio, faça apenas 100 flexões, todos os santos dias!", "Confie mais em si, e é claro em Deus!", "Se você quer ter sucesso, não tenha medo!", "Nada é mais caro do que coisas que você obtém de graça, lembre-se, se o produto for de graça, você é o produto! Tenha cuidado.", "Não faça dinheiro, faça negócio,  dinheiro não faz negócio para si, mas negócio faz dinheiro para si, releia!", "Esqueça tudo que você aprendeu ate agora,o preto é branco e o branco é preto, saia da matrix!", "Só quando você entender o sistema, você poderá escapar do sistema, conheçam seu inimigo, ame seu inimigo e derrote o seu inimigo, todos santos dias!", "As pessoas não percebem que quando eles escolhem o caminho fácil hoje, terão que seguir pelo caminho difícil amanhã!", "Se você tomar uma decisão, sempre use os dois, seu cérebro para a razão, e sua alma para a intuição!", "Não dívida sua atenção, sempre mantenha-se focado em uma só coisa, quando você come, você come, quando você escuta, você escuta, quando você conquista, você conquista!", "Não tente ser melhor do que você é, torne-se!", "Se você se sentir mal, lembre se das seguintes palavras: você não é o único, e mesmo assim, estamos todos a caminho do topo!", "Apague 10 aplicações do seu celular imediatamente, 90% das tecnologias, não nos tornam forte, mas sim nos tornam fracos!", "Nunca multitarefa, todo momento uma única missão, multitarefa é uma piada!", "Sua respiração é o seu mestre se sua respiração for profunda e poderosa, suas ações também serão!","Não fale depressa, não se mova depressa.", "Quando você ficar impaciente, continue a trabalhar e diga: meu tempo vira, meu tempo vira!","Todos os dias, não sigas o caminho mais fácil, lembre-se, você está construindo a coisa mais importante desse universo, a sua disciplina!","Se os maus momentos acontecer, dê uma passo para trás, e olhe para a floresta, não para a árvore, se a árvore falha, a floresta continua a crescer.","Perdedores mantem-se focados 95% nos problemas e 5% nas soluções, vencedores focam-se 95% em soluções e 5% em problemas, tu es um vencedor!", "Nunca reagir rápido quando estiver com raiva,nesses momentos o silêncio é sempre melhor do que a agressão!","Reduza o seu ego para zero, não ande no seu próprio caminho, andem no caminho de Deus!"]
+	
+
+
+ button.addEventListener('click',()=> {
+  	p.innerHTML = palavras[Math.floor(Math.random()*((palavras.length)))
+];
+  });
+
+</script>
+</body>
+</html>

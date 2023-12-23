@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name = "description" content= "Agencia_P">
+<meta name = "keywords" content="Agencia_P, programacao web,html,css,javascript,projecto">
+<meta name="author" content="Pereira Manuel j. Guila">
+<link rel="stylesheet" type="text/css" href="css/Style.css">
+<link rel="stylesheet" type="text/css" href="css/Responsivo.css">
+
+ <title>Agência_guila</title>
+</head>
+<body>
+     
+     <nav>
+     	<div class="logo">AGÊNCIA_GUILA</div>
+
+     	<div class="menuCelular" onclick="show()">
+     		<img class="icon" src="Imagens/menu_entrar.png" alt="menu_entrar">
+     	</div>
+
+     	<ul >
+     		<li><a onclick="fechar()" class="aa" href="#">Página inicial</a></li>
+     		<li><a onclick="fechar()" class="aa" href="#parte1"> Sobre nós</a></li>
+     		<li><a onclick="fechar()" class="aa" href="#parte2"> Serviços</a></li>
+     		<li><a onclick="fechar()" class="activado" href="#parte3"> Contacto</a></li>
+     	</ul>
+     </nav>
+
+    <section id="parte1">
+
+    	<div class="ladoE">
+    		<p>Sobre</p>
+    		<h1>Precisa de um excelente trabalho de publicidade,
+    		 marketing, branding...</h1>
+
+    		 <p>A nossa agência oferece soluções integradas de branding, desenvolvimento de software, gestão de mídia digital e outros serviços relacionados. Ajudamos os nossos clientes a criar e fortalecer a sua identidade visual, a desenvolver e implementar sistemas e aplicativos personalizados, a gerenciar e otimizar as suas campanhas e estratégias de marketing digital e a alcançar os seus objetivos de negócio. Contamos com uma equipe qualificada e experiente, que utiliza as melhores ferramentas e metodologias do mercado, e que se adapta às necessidades e expectativas de cada projeto. Nos destacamos pela nossa criatividade, inovação, qualidade e comprometimento com os nossos clientes.</p>
+    		
+    		 <p><a id="butao" href="#">Ver mais</a></P>
+
+    		
+             
+          
+
+    	</div>
+
+    	<div class="ladoD">
+    		<img src="Imagens/Imagem_section1.jpg" width="100%">
+    	</div>
+
+    </section>
+
+     <h4>Contemple os nossos serviços</h4>
+
+     <section id="parte2">
+     	<div class="pacote">
+     		<img src="Img_pacote/criação de site ou blog.png">
+            <h3>Criação de site ou blog</h3>
+            <p>Criar um site é essencial para que a sua empresa ganhe mais visibilidade na internet e conquiste, por consequência, um número maior de clientes.</p>
+     	</div>
+     	<div class="pacote">
+     		<img src="Img_pacote/criação de App.png">
+	         <h3>Criação de App</h3>
+	         <p>Criamos, planejamos, implementamos e divulgamos soluções para dispositivos móveis.</p>
+     	</div>
+     	<div class="pacote">
+     		<img src="Img_pacote/gestão de mídias sociais.png">
+	        <h3>Gestão de mídias sociais</h3>
+	        <p>Gerenciamos sua presença online nas diversas plataformas de mídia social, como Facebook, YouTube, LinkedIn, Instagram, TikTok e Twitter.</p>
+     	</div>
+     	<div class="pacote">
+     		<img src="Img_pacote/definição de personas.png">
+	        <h3>Definição de personas</h3>
+	        <p>Baseamos o nosso trabalho em dados e características de clientes reais, como comportamento, dados demográficos, problemas, desafios e objetivos.</p>
+     	</div>
+     	<div class="pacote">
+     		<img src="Img_pacote/consultoria de branding.png">
+	        <h3>Consultoria de branding</h3>
+	        <p>Consultoria de branding é um serviço oferecido por nossa agência especializadas a fim de planejar o futuro da sua marca.</p>
+     	</div>
+     	<div class="pacote">
+     		<img src="Img_pacote/design de conteudo.png">
+	        <h3>design de conteudo.</h3>
+	        <p>Temos como objetivo tornar a criação de conteúdo mais estruturada e centrada no seu cliente.</p>
+     	</div>
+     </section>
+
+     <section id="parte3">
+     	 <form>
+             <fieldset>
+                    <h2>Contacto</h2>          	
+                   <div>
+                   	  <label for="nome">Nome:</label><br>
+                   	  <input type="text" name="nome" required>
+                   </div>
+
+                   <div>
+                   	  <label for="email">Email:</label><br>
+                   	  <input type="email" name="email" required>
+                   </div>
+
+                   <div>
+                   	   <label for="numero">Numero de celular:</label><br>
+                   	   <input type="Number" name="numero" required placeholder="+258" maxlength="9">
+
+                   </div>
+
+                   <div>
+                   	   <label for="mensagem">Sua mensagem:</label><br>
+                   	   <input id="sms" type="textarea" name="mensagem" placeholder="Mensagem">
+                   </div>
+                    
+                    <div>
+                    	<button class="enviar" type="sub">Enviar</button>
+                    </div>
+
+             </fieldset>     	 	
+
+
+
+     	 </form>
+
+     </section>
+
+     <footer>
+     <div class="parteA">
+     	<h1>AGÊNCIA_GUILA</h1>
+     </div>
+     <div class="parteB">
+     	<img src="Imagens/facebook.png" width="27px">
+     	<img src="Imagens/instagram.png" width="27px">
+     	<img src="Imagens/whatsapp.png" width="27px">
+     </div>
+     <div class="parteC">
+     	<p>© Todos os direitos reservados.</p>
+     </div>
+     </footer>
+
+
+  <script type="text/javascript" src="javascript/index.js"></script>
+</body>
+</html>

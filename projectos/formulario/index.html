@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tela_de_login</title>
+	<meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<section class="contentor">
+		<header class="topo">
+			<h3>Criar Conta</h3>
+		</header>
+
+		<div class="miniCaixa">
+			<form class="formulario">
+
+				 <div class="pp1">
+					<label for="N_usuario">Nome do usuário</label>
+					<input oninput="validarUsuario()" type="text" name="" id="N_usuario" class="espaco" placeholder="Digite o nome do usuário...">
+					<span class="aviso">O nome deve ter no minimo 2 digitos(obrigatório)!</span>
+					<div class="mmm">
+					     <img src="" class="icon">
+					</div>
+				</div>
+
+
+
+				<div class="pp1">
+					<label for="N_mail">Email</label>
+					<input oninput="validarEmail()" type="email" name="" id="E_mail" class="espaco" placeholder="Digite um email válido...">
+					<span class="aviso">Email Inválido!</span>
+					<div class="mmm">
+					     <img src="" class="icon">
+					</div>
+				</div>
+
+
+				<div class="pp1">
+					<label for="N_password">Senha</label>
+					<input oninput=" validarSenha()" type="password" name="" id="N_password" class="espaco" placeholder="Digite a senha...">
+					<span class="aviso">A senha deve ter no mínimo 7 dígitos!</span>
+					<div class="mmm">
+					     <img src="" class="icon">
+					</div>
+				</div>
+
+
+				<div class="pp1">
+					<label for="N_usuario">Confirme a senha</label>
+					<input oninput="confirmarSenha()" type="password" name="" id="N_usuario" class="espaco" placeholder="Digite a senha novamente...">
+					<span class="aviso">Senha deve ser idêntica em relaҫão ao campo anterior!</span>
+					<div class="mmm">
+				         <img src="" class="icon">
+					</div>
+				</div>
+
+				<div class="enviar">
+					<button class="submit">Enviar</button>
+				</div>
+				
+			</form>
+		</div>
+
+	</section>
+
+
+<script src="javascript/index.js" type="text/javascript"></script>
+</body>
+</html>

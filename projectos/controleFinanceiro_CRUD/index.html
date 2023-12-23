@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ControleFinanceiro</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+  <div class="capa">
+  	  <div class="modal">
+  	  	 <span class="cima">
+  	  	 	<h3 class="cadEdit">Cadastro</h3>
+  	  	 </span>
+  	  	 <div class="blocoInputs">
+  	  	 	<input oninput="validarDscricao()" class="descricao" type="text" placeholder="Descrição">
+  	  	 	<input oninput="validarMutante()" class="mutante" type="number" placeholder="Mutante(MZN)">
+  	  	 	<select oninput="validarselector()">
+  	  	 		<option>Selecione</option>
+  	  	 		<option>Entrada</option>
+  	  	 		<option>Saida</option>
+  	  	 	</select>
+  	  	 </div>
+
+  	  	 <div class="divButoes">
+  	  	 	<button class="butaoCancelar">Cancelar</button>
+  	  	 	<button class="butaoAdicionar">Adicionar</button>
+          <button class="butaoEditar" onclick="editar()">Editar</button>
+  	  	 </div>
+  	  
+  	  </div>
+  </div>
+
+  <div class="capa2">
+     <div class="modal2">
+         <div class="cima2">
+            <img src="imagens/marcaX.png">
+         </div>
+          <span class="oqueDeletar"><h3>Continuar?</h3></span>
+      <div class="divButoes2">
+          <button class="confirmarNao" onclick="cancelarApagar()">Cancelar</button>
+          <button class="confirmarSim" onclick="apagar()">Apagar</button>
+      </div>
+      <div class="butaoX">
+       <img src="imagens/x16px.png">
+     </div>
+    
+     </div>
+     
+  </div>
+
+   <section class="caixa1">
+        <div class="divInput">
+          <input maxlength="20" type="text" class="pesquisar" placeholder="pesquisar">
+             <div class="divProcurar">
+               <img src="imagens/procura.png">
+             </div>
+        </div>
+
+   </section>
+
+   <section class="caixa2">
+      <time class="tempo"></time>
+      <div class="parte2">
+      	  <div class="visualizador1">
+      	      <div class="visu1">
+      	      	<span class="spanInfor">Entrada Total: MZN</span>
+      	      	<span class="valorEntrada"></span>
+      	      </div>
+      	      <div class="visu2">
+      	        <img src="imagens/grafico-de-crescimento.png">
+      	      </div>
+      	  </div>
+      	  <div class="visualizador2">
+      	      <div class="visu1">
+      	      	<span class="spanInfor">Saida Total: MZN</span>
+      	      	<span class="valorSaida"></span>
+      	      </div>
+      	      <div class="visu2">
+      	        <img src="imagens/flecha.png">
+      	      </div>
+      	  </div>
+      	  <div class="visualizador3">
+      	      <div class="visu1">
+      	      	<span class="spanInfor">Total Restante: MZN</span>
+      	      	<span class="valorRestante"></span>
+      	      </div>
+      	      <div class="visu2">
+      	        <img src="imagens/pilha-de-moedas2.png">
+      	      </div>
+      	  </div>
+
+      </div>	
+   </section>
+
+
+   <section class="caixa3">
+   	  <button class="adicionar">Novo</button>
+   	  <div class="space">
+   	  	   <table>
+   	  	  <thead>
+   	  	  	 <tr>
+   	  	  	 	<th>Data</th>
+   	  	  	 	<th>Descrição</th>
+   	  	  	 	<th>Montante</th>
+   	  	  	 	<th>Tipo de transação</th>
+                <th>.....</th>
+   	  	  	 </tr>
+   	  	  </thead>
+   	  	   <tbody class="tbRegistros">
+   	  	   	
+   	  	   	
+   	  	   </tbody>
+   	  	   <tfoot>
+   	  	   	 <tr>
+   	  	   	 	<td></td>
+   	  	   	 	<td></td>
+   	  	   	 	<td></td>
+   	  	   	 	<td></td>
+   	  	   	 	<td></td>
+   	  	   	 </tr>
+   	  	   </tfoot>
+   	  	
+
+   	  </table>
+
+   	  </div>
+   </section>
+<script src="javascript/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

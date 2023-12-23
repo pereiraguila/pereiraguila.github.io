@@ -1,0 +1,449 @@
+html{
+	scroll-behavior: smooth;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+body{
+	padding: 0 80px 0px 80px;
+	background: #DCDCDC;
+}
+
+
+nav {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+ }
+
+nav .logo p{
+   font-size: 22px;
+   color: #FFFFFF;
+}
+
+nav .menuCelular {
+  cursor: pointer;
+  padding: 3px 5px;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li .menu_a,
+.activado {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+
+nav ul li .menu_a::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  background-color: #EA1E63;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.activado {
+  border:2px solid #EA1E63;
+  border-radius:20px;
+  color: white;
+}
+
+.menu_a:hover {
+  color: #EA1E63;
+}
+
+
+
+#section1{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top:116px;
+	padding: 80px 30px 30px 30px;
+	background:#FFFFFF;
+	padding: 30px;
+	box-shadow: 0 0 3px;
+	
+}
+
+#section1 div{
+	margin-top:20px;
+
+}
+
+.avatarImg{
+	width: 250px;
+	height: 250px;
+	border-radius:100%; 
+	border: 3px solid #000080;
+	box-shadow: 0 0 15px #000080;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+
+@keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-17px); /* Ajuste o valor conforme necessário para a amplitude do movimento */
+      }
+    }
+
+    /* Estilo da imagem */
+    .avatarImg {
+      position: relative;
+      margin: 0 auto; /* Centraliza a div horizontalmente */
+      animation: moveUpDown 2s infinite; /* Ajuste a duração da animação conforme necessário */
+    }
+
+.section1Texto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+.section1Texto h1{
+	font-size: 28px;
+	color: #000080;
+	text-align: center;
+}
+
+.section1Texto h1 .destaque{
+	color:#EA1E63; 
+}
+
+
+.section1Texto p{
+	font-size: 20px;
+	color:#000000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.butao button{
+	color:white;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	border-radius:5px;
+	font-weight: bold;
+	font-size: 15px;
+	transition: 0.5s;
+
+}
+
+
+.button2{
+	background:#000080; 
+}
+
+.button2:hover{
+	background:#EA1E63; 
+}
+
+.butao button:hover{
+	transform: translateY(-5px);
+}
+
+
+
+.redeSociais .social img{
+transition: 0.5s;
+}
+
+
+.redeSociais .social img:hover{
+transform: translateY(-10px);
+}
+
+
+#section2{
+margin-top:35px;
+width: 100%;
+text-align: center;
+background:#FFFFFF;
+padding: 80px 30px 30px 30px;
+box-shadow: 0 0 3px;
+
+}
+
+
+#section2 h1{
+	font-size: 28px;
+	color: #000080;
+	margin-bottom: 10px;
+}
+
+h1 .destaque2{
+	color:#EA1E63; 
+}
+
+#section2 p{
+	font-size: 20px;
+	color:#000000;
+	text-align:left; 	
+
+}
+
+#section2 a{
+	margin-top:30px; 
+}
+
+.verMais button{
+    width: 100px;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	border-radius:5px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #FFFFFF;
+	background: #EA1E63;
+	margin-top: 20px;
+	transition: 0.5s;
+	
+}
+
+
+.verMais button:hover{
+	background: #000080;
+	transform: translateY(-5px);
+}
+
+#section3{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 80px 30px 30px 30px;
+	background: #FFFFFF;
+	box-shadow: 0 0 3px;
+	
+}
+
+
+.projectoTitulo{
+  text-align: center;
+  color: #000080;
+  font-size: 28px;
+}
+
+.card h1{
+  font-size: 22px;
+	
+}
+
+#section3 .destaque3{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color:#000000;
+	margin-top: 20px;
+
+}
+
+.projectos{
+   display: flex;
+   flex-flow:row wrap; 
+   justify-content: center;
+   flex-flow:row wrap; 
+
+}
+
+
+.card{
+	width: 40%;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 0 3px #000000;
+	margin: 15px;
+	padding: 10px;
+	transition: 0.3s;
+	
+}
+
+.card:hover{
+	border: 1px solid #000080;
+	
+}
+
+.card p{
+	text-align: center;
+	font-size: 20px;
+	color:#000000;
+}
+
+.mais{
+	background:#EA1E63;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.mais:hover{
+  background: #000080;
+}
+
+
+#contact {
+     background: #FFFFFF;
+     padding: 80px 30px 30px 30px;
+     box-shadow: 0 0 3px;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#contact h1 {
+     color: #000080;
+    font-size: 28px;
+    margin-bottom:20px; 
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     width: 70%;
+     max-width: 500px;
+}
+
+label {
+     font-size: 20px;
+     color: #000080;
+     margin-bottom: 8px;
+}
+
+input, textarea {
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #000080;
+     border-radius: 5px;
+}
+
+#contact button {
+     background: #EA1E63;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.5s;
+}
+
+#contact button:hover {
+     background: #000080;
+}
+
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+	background-image: linear-gradient(to right,#000000,#000000,#000000,#000080);
+	width: 100%;
+	height: 300px;
+	box-shadow: 0 0 3px;
+
+
+}
+
+footer div{
+	flex: 33.3%;
+}
+
+.parte1{
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-weight: bold;
+
+}
+
+.parte2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parte2 img{
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.parte2 img:hover{
+ transform: translateY(-10px);
+}
+
+
+.parte3{
+	color:#FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
