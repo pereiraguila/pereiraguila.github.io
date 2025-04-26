@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Afazeres</title>
+<meta name = "description" content= "Lista de Atividades">
+<meta name = "keywords" content="Lista de Atividades, programacao web,html,css,javascript,projecto">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Pereira Manuel j. Guila">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<section>
+		<h2>AFAZERES</h2>
+        <div class="pedestal">
+            <div class="topo">
+            <input maxlength="25" id="camp" type="text" placeholder="Digite aqui a sua actividade">
+            <button onclick="acrescentar()" class="add">+</button>
+            <button onclick="editar()" class="update"><img src="imagens/editar.png"></button>
+        </div>
+
+        <div class="DivButaoCancelar">
+            <button onclick="cancelarEdicao()" class="cancelar">Cancelar</button>
+        </div>
+
+        <div class="filtroPesquisa">
+            <p>Filtro:</p>
+            <select onchange="filtro()">
+                <option>Todos</option>
+                <option>Concluidas</option>
+                <option>Pendentes</option>
+            </select>
+            
+
+        </div>
+
+        </div>
+		
+
+		<div id="armazenamento">
+		
+
+		</div>
+
+       
+     <script src="javascript/index.js"></script>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,551 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: #DCDCDC;
+	z-index:1;
+
+}
+
+
+.capa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(0,0,0,0.8);
+	z-index:5;
+	left:-100%;
+	transition: 0.5s;
+	top:0;
+	
+
+}
+
+.abrirModal{
+	left: 0;
+}
+
+.modal{
+	display:flex;
+	flex-direction: column;
+	width: 500px;
+	height: 110px;
+	background: #FFFFFF;
+	z-index:10;
+	padding-bottom: 20px;
+	max-width: 90%;
+
+
+}
+
+.cima{
+	background:#1877F2;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFFFFF;
+	position: relative;
+	
+}
+
+
+.blocoInputs{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 10px 10px 0 10px;
+	justify-content: space-around;
+}
+
+input{
+	height: 20px;
+	outline: none;
+	
+	
+}
+
+ select{
+ 	width: 100px;
+ 	outline: none;
+ }
+
+
+
+.divButoes{
+	display: flex;
+	justify-content:flex-end;
+	margin: 10px 10px 0 10px;
+	padding-right: 4px;	
+}
+
+.divButoes button{
+  height: 28px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.butaoAdicionar{
+    background:#00C300;
+	width: 90px;
+	border:2px solid black;
+	  
+}
+
+.butaoCancelar{
+	background:#E00D10;
+	margin-right: 14.5px;
+	width: 90px;
+	border:2px solid black;
+}
+
+
+
+.butaoEditar{
+	background:#1877F2;
+	width: 90px;
+	border:2px solid black;
+	display: none;	
+} 
+
+.capa2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(0,0,0,0.8);
+	z-index:5;
+	left:;
+	transition: 0.5s;
+	top:0;
+	left:-100%;
+	
+}
+
+.abrirModal2{
+	left:0;
+}
+
+.modal2{
+ width: 300px;
+ height: 250px;
+ background:#FFFFFF;
+ display: flex;
+ flex-direction: column;
+ padding-bottom: 20px;
+ max-width: 90%;
+ position: relative;
+
+}
+
+.butaoX{
+	position: absolute;
+	left: 89%;
+	top: 2%;
+	cursor: pointer;
+	padding: 5px;
+	transition: 0.5s
+}
+
+.butaoX:hover{
+	background:#DCDCDC; 
+}
+
+.cima2{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	
+	margin-top:20px; 
+}
+
+.oqueDeletar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-top:10px;
+	height: 50px;
+	font-size: 17px;
+	color: #000000;
+	margin: 10px 10px auto 10px; 
+}
+
+.divButoes2{
+	height: 28px;
+	display: flex;
+	justify-content:center;
+	margin: 15px 10px 0 10px;	
+
+}
+
+.divButoes2 button{
+	font-weight: bold;
+	height: 28px;
+	width: 90px;
+	border:none;
+}
+
+ .confirmarSim{
+    background:#E00D10;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+
+.confirmarNao{
+	background: #696969;
+	margin-right: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+.caixa1{
+	background:#1877F2;
+	height: 65px;
+	border-radius:10px; 
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	padding-right:20px; 
+    padding-left:20px;
+}
+
+
+.divProcurar{
+	position: absolute;
+	left:3%;
+	bottom:6.5%;
+
+}
+
+.divInput{
+	position: relative;
+}
+
+.pesquisar{
+	background: #DCDCDC;
+	outline: none;
+	border: none;
+	height: 35px;
+	border-radius: 5px;
+	padding-left: 33px;
+	width: 180px;
+
+}
+
+.caixa1,.caixa2,.caixa3{
+ margin: 20px 140px 15px 140px;
+}
+
+.caixa2{
+	background:#FFFFFF;
+	min-height:190px;
+	border-radius:10px; 
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 1px; 
+}
+
+
+
+.tempo{
+	flex:20%;
+	padding-left:10px; 
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #1877F2;
+	font-size:17px;
+	font-family: 'poppins', sans-serif;
+    font-weight: bold;
+}
+
+.parte2{
+	flex:80%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.visualizador1,.visualizador2,.visualizador3{
+	width: 270px;
+	height: 100px;
+	box-shadow: 0 0 3px #000000;
+	border-radius:17px;
+	display: flex; 
+	padding: 0 10px 10px 10px;
+	margin: 5px;
+	color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.visualizador1{
+ background-image: linear-gradient(
+  45deg,
+  hsl(214deg 89% 52%) 0%,
+  hsl(219deg 100% 33%) 2%,
+  hsl(0deg 0% 0%) 99%
+);
+}
+
+.visualizador2{
+
+background-image: linear-gradient(
+  45deg,
+  hsl(333deg 100% 41%) 0%,
+  hsl(342deg 100% 27%) 15%,
+  hsl(0deg 0% 0%) 99%
+);
+
+
+}
+
+.visualizador3{
+background-image: linear-gradient(
+  35deg,
+  hsl(0deg 0% 41%) 0%,
+  hsl(344deg 0% 21%) 1%,
+  hsl(0deg 0% 0%) 99%
+);
+
+}
+
+.visu1{
+	flex:70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.visu2{
+	flex:30%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.spanInfor{
+display: block;
+ font-size: 15px;
+}
+.valorEntrada,.valorSaida,.valorRestante{
+ font-size: 22px;
+ font-weight: bold;
+ color:#FFFFFF;
+
+}
+
+.caixa3{
+	padding: 20px 70px 30px 70px;
+	min-height:100px;
+	background:#FFFFFF;
+	border-radius:15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 1px; 
+}
+
+.adicionar{
+	border: none;
+	border-radius:8px; 
+	background:#00C300;
+	height: 30px;
+	color: #FFFFFF; 
+	cursor: pointer;
+	width: 165px; 
+	transition: 0.4s;
+	font-weight: bold;
+}
+
+.space{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+
+	
+}
+
+thead{
+	height: 30px;
+	background:#1877F2;
+	color: #FFFFFF;
+	font-weight: bold;
+
+	
+}
+
+.cinza{
+	background: #DCDCDC;
+}
+
+tbody{
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+tr{
+	height:35px;
+}
+
+tr:hover{
+   cursor:text;
+}
+
+
+.botaoApagar{
+ cursor: pointer;
+}
+
+.botaoEditar{
+	cursor: pointer;
+}tfoot{
+	text-align: center;
+	background:#1877F2;
+	height: 30px;
+
+}
+
+
+@media screen and (max-width: 1250px){
+	.caixa1,.caixa2,.caixa3{
+        margin: 20px 100px 15px 100px;
+     }
+
+      .caixa3{
+        padding: 20px 5px 30px 5px;
+     }
+}
+
+@media screen and (max-width:1100px){
+	.caixa1,.caixa2,.caixa3{
+        margin: 20px 70px 15px 70px;
+     }
+}
+
+@media screen and (max-width: 1140px){
+	.caixa1,.caixa2,.caixa3{
+        margin: 20px 50px 15px 50px;
+     }
+}
+
+
+@media screen and (max-width: 1000px){
+	.caixa1,.caixa2,.caixa3{
+        margin: 20px 30px 15px 30px;
+     }
+}
+
+@media screen and (max-width: 960px){
+	.caixa1,.caixa2,.caixa3{
+        margin: 20px 10px 15px 10px;
+     }
+}
+
+@media screen and (max-width: 920px){
+	
+     .visualizador1,.visualizador2,.visualizador3{
+     	width: 260px;
+     }
+}
+
+@media screen and (max-width:890px){
+	
+     .visualizador1,.visualizador2,.visualizador3{
+     	width: 240px;
+     }
+}
+
+@media screen and (max-width:828px){
+	
+     .visualizador1,.visualizador2,.visualizador3{
+     	width: 220px;
+     }
+}
+
+@media screen and (max-width:777px){
+	
+     .visualizador1,.visualizador2,.visualizador3{
+     	width:100%;
+     	margin: 5px;
+     	border-radius: 0;
+     }
+
+     .caixa1,.caixa2,.caixa3{
+		padding: 15px;
+		border-radius: 0;
+	}
+
+	.caixa1{
+		justify-content: center;
+	}
+
+}
+
+
+
+@media screen and (max-width:585px){
+	
+     tr{
+		height:auto;
+	}
+
+}
+
+
+@media screen and (max-width:500px){
+	.modal2{
+      width:100%;
+    }
+
+    
+   .blocoInputs{
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .blocoInputs input, select{
+      margin: 10px;
+      width: 80%;
+   }
+
+   .modal{
+     height:200px;
+   }
+
+   .divButoes{
+   	justify-content: center;
+   }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/*font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;*/
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding:0px;
+	
+}
+
+	
+
+nav{
+	background:black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	padding: 0 40px 0 40px;
+	position: fixed;
+}
+
+nav .logo{
+	display: flex;
+	color: white;
+	font-weight:900;
+	font-size: 22px;
+	font-family: 'Lobster', cursive;
+}
+
+nav .menuCelular{
+	cursor: pointer;
+	padding: 3px 5px;
+	display: none;
+
+	
+
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	flex-flow: row wrap;
+}
+
+nav ul li{
+	margin: 0 5px;
+}
+
+nav ul li .aa, .activado{
+	text-decoration: none;
+	font-size: 19px;
+	color: #ffffff;
+	font-weight:600;
+	padding: 10px 15px;
+	transition: all 0.5s ease;
+	position: relative; 
+}
+
+ nav ul li .aa::after{
+  content: " ";
+  width: 0;
+  height: 3px;
+  background-color:#5bd3db;
+  position: absolute;
+  bottom:0 ;
+  left:0 ;
+  transition: 0.5s ease-in-out; 
+ }
+
+ nav ul li a:hover::after{
+ 	width: 100%;
+ }
+
+.activado{
+ background:#5bd3db;
+ border-radius: 10px;
+ color: black;
+}
+
+.activado:hover{
+	background-color: #5f67fa;
+}
+
+#parte1{
+	padding-top:10px; 
+ 	margin: 0 5% 0 5%;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ }  
+
+ .ladoE{
+   flex: 50%;
+   display:flex;
+   flex-direction: column;
+   padding-top:150px;
+ } 
+
+ .ladoE h1{
+ 	font-size: 38px;
+ 	padding: 12px 0px;
+ 	color: #3c3c8b;
+ }
+
+ .ladoE p{
+	color:grey;
+	font-size: 19px;
+	font-family: 'Poppins', sans-serif;
+	
+ }
+
+
+ .ladoE p:first-child{
+	color:#3c3c8b;
+	font-weight: bold;
+	font-size: 20px;
+
+ }
+
+
+
+ .ladoD{
+    flex: 50%;
+    padding-top: 20px;
+ }
+
+#butao{
+	text-decoration: none;
+	font-size: 19px;
+	color: black;
+	font-weight:600;
+	padding: 10px 15px;
+	margin-top:20px;
+	border-radius: 10px;
+	display: inline-block;
+	background:#5f67fa;
+	transition: all 0.5s ease;
+
+}
+
+#butao:hover{
+	background:#5bd3db;
+}
+
+h4{
+	text-align: center;
+	font-size: 24px;
+	color: #3c3c8b;
+	font-family: 'Poppins', sans-serif;
+}
+
+#parte2{
+	
+  display: flex;
+  padding: 20px;
+  margin: 1% 0 30px 0;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pacote{
+	
+	border-bottom-left-radius:45px;
+	box-shadow: 0 0 10px; 
+	width:30%;
+	height:250px;
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+	padding:15px;
+	cursor: pointer;
+	transition:0.5s;
+}
+
+.pacote p{
+	font-size: 18px;
+}
+
+.pacote:hover{
+	background-color: #5f67fa;
+	transform: translateY(-12px);
+	color: white;
+}
+
+.pacote:hover img{
+	filter: invert(1);
+}
+
+
+#parte3{
+	margin: 50px 65px 30px 65px;
+}
+
+fieldset{
+	font-family: 'Poppins', sans-serif;
+	padding:30px;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	border: none;
+	box-shadow: 0 0 15px;
+	
+   
+}
+
+fieldset div{
+	margin-top:10px; 
+}
+
+
+fieldset h2{
+ font-weight:600;
+  color:#3c3c8b;
+}
+
+label{
+	font-size: 18px;
+}
+
+input{
+	width: 100%;
+	height: 30px;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid black;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+#sms{
+	border-bottom:none; 
+	border:2px solid black;
+	height: 80px;
+	padding-left: 5px;
+	padding-bottom: 50px; 
+}
+
+.enviar{
+	padding: 12px 22px;
+	background-image: linear-gradient(to right,#3c3c8b,#5f67fa);
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	color: white;
+
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+	background-image: linear-gradient(to right,black,black,black,#000080);
+	width: 100%;
+	height: 300px;
+}
+
+footer div{
+	flex: 33.3%;
+}
+
+.parteA{
+	font-family: 'Lobster', cursive;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parteB{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parteB img{
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.parteB img:hover{
+ transform: translateY(-10px);
+}
+
+
+.parteC{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
